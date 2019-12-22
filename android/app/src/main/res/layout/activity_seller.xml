@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SellerActivity">
+    <Button
+        android:id="@+id/seller_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="9dp"
+        android:text="商人资料"
+        app:layout_constraintBottom_toTopOf="@+id/title_boundry4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginBottom="8dp"
+        android:text="正卖商品"
+        app:layout_constraintBottom_toTopOf="@+id/title_boundry4"
+        app:layout_constraintStart_toStartOf="@+id/seller_center" />
+
+    <Button
+        android:id="@+id/add_selling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加商品"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/title_boundry4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/seller_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="商人中心"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/back2"
+        app:layout_constraintStart_toEndOf="@+id/person_center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/person_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="返回个人中心"
+        app:layout_constraintBottom_toTopOf="@+id/title_boundry2"
+        app:layout_constraintEnd_toStartOf="@+id/seller_center"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="返回主界面"
+        app:layout_constraintBottom_toTopOf="@+id/title_boundry2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seller_center" />
+
+    <TextView
+        android:id="@+id/title_boundry2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/boundary2"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_center" />
+
+    <TextView
+        android:id="@+id/title_boundry4"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:layout_weight="1"
+        android:background="@drawable/boundary2"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_center" />
+
+    <TextView
+        android:id="@+id/SellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="姓名:"
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_boundry4" />
+
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/SellerName"
+        app:layout_constraintTop_toBottomOf="@id/title_boundry4"
+        />
+
+    <TextView
+        android:id="@+id/SellerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="联系方式:"
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SellerName" />
+
+
+    <TextView
+        android:id="@+id/seller_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/SellerPhone"
+        app:layout_constraintTop_toTopOf="@+id/SellerPhone" />
+
+    <TextView
+        android:id="@+id/Department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="学部:"
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SellerPhone" />
+
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/Department"
+        app:layout_constraintTop_toTopOf="@+id/Department" />
+
+    <TextView
+        android:id="@+id/School"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="院系:"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Department" />
+
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/School"
+        app:layout_constraintTop_toTopOf="@+id/School" />
+
+    <TextView
+        android:id="@+id/Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="年级:"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/School" />
+
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/Grade"
+        app:layout_constraintTop_toTopOf="@+id/Grade" />
+
+    <ListView
+        android:id="@+id/list_view_seller"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/title_boundry4"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
